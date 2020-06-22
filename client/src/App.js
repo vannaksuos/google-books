@@ -4,6 +4,7 @@ import Search from "./components/Search";
 import Saved from "./components/Saved";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home from "./components/Home";
 
 import {
   BrowserRouter as Router,
@@ -23,7 +24,7 @@ function App() {
           <Route path="/Saved">
             <Saved />
           </Route>
-          <Route path="/">
+          <Route path="/Search">
             <Search />
           </Route>
           <Route path="/Header">
@@ -32,11 +33,13 @@ function App() {
             <Route path="/Footer">
             <Footer />
             </Route>
+            <Route path="/">
+            <Home />
+            </Route>
         </Switch>
       </div>
     </Router>
     </div>
-  
   );
 }
 
