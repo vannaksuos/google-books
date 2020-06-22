@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:black;
 }
 
 .App-link {
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  background-image: url('https://cdn.lifehack.org/wp-content/uploads/2016/02/27183906/book-67049_1280.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+
+}
+
+.jumbotron {
+  background-image: url('https://cdn.lifehack.org/wp-content/uploads/2016/02/27183906/book-67049_1280.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
 }

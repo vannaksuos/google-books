@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Book from "./Book";
 
+
 function Search() {
     const [query, setQuery] = useState("");
     const [books, setBooks] = useState([]);
@@ -18,7 +19,7 @@ function Search() {
     return (
         <div className="input-group mb-3" style={{width: "30%"}} >
             <div className="input-group-prepend">
-                <button onClick={searchBooks} className="btn btn-outline-secondary" type="button" id="button-addon1">Search</button>
+                <button onClick={searchBooks} className="btn btn-outline-primary" type="button" id="button-addon1">Search</button>
             </div>
             <input onChange={handleChange} type="text" className="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"/>
             {books.map(b=> {

@@ -2,7 +2,8 @@
   "name": "google-books",
   "version": "1.0.0",
   "engines": {
-    "node": "v12.14.1"},
+    "node": "v12.14.1"
+  },
   "description": "",
   "main": "server.js",
   "dependencies": {
