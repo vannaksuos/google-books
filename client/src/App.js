@@ -3,6 +3,7 @@ import './App.css';
 import Search from "./components/Search";
 import Saved from "./components/Saved";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 import {
   BrowserRouter as Router,
@@ -19,12 +20,18 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/saved">
+          <Route path="/Saved">
             <Saved />
           </Route>
           <Route path="/">
             <Search />
           </Route>
+          <Route path="/Header">
+            <Header />
+            </Route>
+            <Route path="/Footer">
+            <Footer />
+            </Route>
         </Switch>
       </div>
     </Router>
