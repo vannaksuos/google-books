@@ -1,6 +1,8 @@
 {
   "name": "google-books",
   "version": "0.1.0",
+  "engines": {
+  "node": "v12.14.1",
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
