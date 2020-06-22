@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import Search from "./components/Search";
 import Saved from "./components/Saved";
+import Header from "./components/Header";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 function App() {
@@ -15,17 +15,7 @@ function App() {
     <div>
       <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Search</Link>
-            </li>
-            <li>
-              <Link to="/saved">saved</Link>
-            </li>
-          </ul>
-        </nav>
-
+      <Header />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>

@@ -23,14 +23,13 @@ const BookSchema = new Schema({
   image: {
     type: String,
     trim: true,
-    required: "String is Required"
+  
 
   },
 
   links:{
     type: String,
     trim: true,
-    required: "String is Required"
   },
   
 });

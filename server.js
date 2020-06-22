@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require("mongoose");
 const bookModel = require("./models/book");
+const axios = require("axios");
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -23,8 +24,17 @@ app.get("/api/books", (req, res) => {
 });
 
 app.post("/api/books", ({ body }, res) => {
-    const book = body;
-    bookModel.save(book, (error, savedBooks) => {
+    // const book = body;
+    // console.log(book)
+    console.log(bookModel)
+    const book = {
+        title:body.bookInfo.volumeInfo.title,
+        authors:body.bookInfo.volumeInfo.authors,
+        description:body.bookInfo.volumeInfo.description,
+        image:body.bookInfo.volumeInfo.imageLinks && body.bookInfo.volumeInfo.imageLinks[0],
+        links:body.bookInfo.volumeInfo.previewLInk
+    }
+    bookModel.create(book, (error, savedBooks) => {
     if (error) {
         console.log(error);
     } else {
@@ -33,7 +43,23 @@ app.post("/api/books", ({ body }, res) => {
     });
 });
 
-
+app.delete("/api/books/:id",  (req, res) => {
+    bookModel.remove({_id:req.params.id}, (error, response) => {
+        if (error) {
+            res.send(error);
+        } else {
+            res.send(response);
+        }
+        });
+    });
+    
+app.get("/api/google", (req, res) => {
+    console.log(req.query)
+    axios.get("https://www.googleapis.com/books/v1/volumes?q=" + req.query.q).then((response) => {
+    // console.log(response.data) 
+    res.json(response.data)
+    })
+})
 
 // Send every other request to the React app
 // Define any API routes before this runs
