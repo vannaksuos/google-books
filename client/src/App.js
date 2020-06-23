@@ -4,7 +4,7 @@ import Search from "./components/Search";
 import Saved from "./components/Saved";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./components/Home.js";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
@@ -12,12 +12,12 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={HomePage} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/saved" component={Saved} />
           <Route exact path="/footer" component={Footer} />
           <Route exact path="/header" component={Header} />
-          <Route component={Home} />
+          <Route component={HomePage} />
         </Switch>
       </Router>
       </div>

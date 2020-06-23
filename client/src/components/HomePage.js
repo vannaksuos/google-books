@@ -1,6 +1,6 @@
 import React from "react";
 
-function Home() {
+function HomePage() {
     return(
         <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -10,4 +10,4 @@ function Home() {
 </div>
     )
 }
-export default Home;
+export default HomePage;
