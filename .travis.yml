@@ -21,7 +21,6 @@ jobs:
     - yarn build
     # react-router CJS build is imported by react-router-config tests,
     # so we need to build it before running react-router-config tests
-    - cd packages/react-router && BUILD_ENV=cjs yarn build && cd -
     script: yarn test
   - stage: Release
     if: tag =~ ^v[0-9]
