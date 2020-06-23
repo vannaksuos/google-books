@@ -4,9 +4,8 @@ import Search from "./components/Search";
 import Saved from "./components/Saved";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
+import Home from "./components/Home.js";
 
-  
 function App() {
   return (
     <div>
@@ -26,30 +25,3 @@ function App() {
 }
 
 export default App;
-
-
-
-// {/* <Header />
-//         {/* A <Switch> looks through its children <Route>s and
-//             renders the first one that matches the current URL. */}
-//         <Switch>
-//           <Route path="/Saved">
-//             <Saved />
-//           </Route>
-//           <Route path="/Search">
-//             <Search />
-//           </Route>
-//           <Route path="/Header">
-//             <Header />
-//             </Route>
-//             <Route path="/Footer">
-//             <Footer />
-//             </Route>
-//             <Route path="/">
-//             <Home />
-//             </Route>
-//         </Switch>
-//       </>
-//     </Router>
-//     </div>
-//   ); */}
