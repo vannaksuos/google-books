@@ -38,18 +38,18 @@
 }
 
 body {
-  background-image: url('https://cdn.lifehack.org/wp-content/uploads/2016/02/27183906/book-67049_1280.jpg');
+  background-image: url('https://www.unitedvanlines.com/wp-content/uploads/2019/10/GettyImages-698733848.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: white;
+  /* color: white; */
 
 }
 
 .jumbotron {
-  background-image: url('https://cdn.lifehack.org/wp-content/uploads/2016/02/27183906/book-67049_1280.jpg');
+  background-image: url('https://www.unitedvanlines.com/wp-content/uploads/2019/10/GettyImages-698733848.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: white;
+  /* color: white; */
 }
