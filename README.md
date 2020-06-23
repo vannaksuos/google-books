@@ -38,4 +38,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Vannaksuos@gmail.com
 
 # Demo
-![demo](https://user-images.githubusercontent.com/59664686/85332381-dd158500-b4a5-11ea-8c3c-d676ba9bb1fe.gif)
+![demo](https://user-images.githubusercontent.com/59664686/85418585-f4548100-b53e-11ea-8aec-aa4b58a32b80.gif)
+
