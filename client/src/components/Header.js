@@ -6,7 +6,7 @@ function Header() {
     return(
         <header>
             <nav>
-            <ul className="nav justify-content-end">
+            <ul className="nav">
                 <li className="nav-item">
                     <NavLink className="nav-link" to="/home" activeClassName="active">Home</NavLink>
                 </li>
