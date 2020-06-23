@@ -1,6 +1,6 @@
 import React from "react";
-import {
-} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+
 
 function Header() {
     return(
@@ -8,13 +8,13 @@ function Header() {
             <nav>
             <ul className="nav justify-content-end">
                 <li className="nav-item">
-                    <a className="nav-link active" href="/home">Home</a>
+                    <NavLink className="nav-link" to="/home" activeClassName="active">Home</NavLink>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/Search">Search</a>
+                    <NavLink className="nav-link" to="/Search" activeClassName="active">Search</NavLink>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="/Saved">Saved</a>
+                    <NavLink className="nav-link" to="/Saved" activeClassName="active">Saved</NavLink>
                 </li>
                 </ul>
         </nav>
