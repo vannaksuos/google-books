@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Search from "./components/Search";
 import Saved from "./components/Saved";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
   
 function App() {
   return (
