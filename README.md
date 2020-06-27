@@ -7,7 +7,7 @@
 https://vannaksuos.github.io/google-books/
 
 # Deploy Heroku link
-https://dashboard.heroku.com/apps/limitless-reef-18440
+https://limitless-reef-18440.herokuapp.com/
 
 # Title: Google Books
 
